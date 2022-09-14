@@ -3,12 +3,13 @@ import './App.css';
 import Amplify, { API } from 'aws-amplify'
 import React, { useEffect, useState } from 'react'
 
-const myAPI = "api1a546777"
-const path = '/customers'
+const myAPI = "todosApi"
+const path = '/todos'
 
 function App() {
   const [input, setInput] = useState("")
   const [customers, setCustomers] = useState([])
+  const [todos, setTodos] = useState([])
 
   //Function to fetch from our backend and update customers array
   function getCustomer(e) {
@@ -24,6 +25,18 @@ function App() {
          console.log(error)
        })
   }
+
+  API.get(myAPI, path, {})
+      .then(response => {
+        const todo = JSON.parse(response.body)
+        console.log(todo)
+        setTodos(todo)
+
+      })
+      .catch(err => {
+        console.log(err)
+        console.log('soy')
+      })
 
   return (
     

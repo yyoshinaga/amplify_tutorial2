@@ -15,8 +15,19 @@
       "function": {
         "CustomerHandler": {
           "deploymentBucketName": "amplify-amplify9b6432cc508d4-staging-201507-deployment",
-          "s3Key": "amplify-builds/CustomerHandler-54412b7957543237552f-build.zip"
+          "s3Key": "amplify-builds/CustomerHandler-317438426c6a48383844-build.zip"
+        },
+        "todosLambda": {
+          "deploymentBucketName": "amplify-amplify9b6432cc508d4-staging-201507-deployment",
+          "s3Key": "amplify-builds/todosLambda-556c6b5a5858764a7363-build.zip"
+        },
+        "todos": {
+          "deploymentBucketName": "amplify-amplify9b6432cc508d4-staging-201507-deployment",
+          "s3Key": "amplify-builds/todos-453879685578424b6c51-build.zip"
         }
+      },
+      "auth": {
+        "undefined": {}
       }
     }
   }
