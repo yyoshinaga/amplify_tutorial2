@@ -3,8 +3,8 @@ import './App.css';
 import Amplify, { API } from 'aws-amplify'
 import React, { useEffect, useState } from 'react'
 
-const myAPI = "todosApi"
-const path = '/todos'
+const myAPI = "api1a546777"
+const path = '/customers'
 
 function App() {
   const [input, setInput] = useState("")
@@ -26,17 +26,17 @@ function App() {
        })
   }
 
-  API.get(myAPI, path, {})
-      .then(response => {
-        const todo = JSON.parse(response.body)
-        console.log(todo)
-        setTodos(todo)
+  // API.get(myAPI, path, {})
+  //     .then(response => {
+  //       const todo = JSON.parse(response.body)
+  //       console.log(todo)
+  //       setTodos(todo)
 
-      })
-      .catch(err => {
-        console.log(err)
-        console.log('soy')
-      })
+  //     })
+  //     .catch(err => {
+  //       console.log(err)
+  //       console.log('soy')
+  //     })
 
   return (
     

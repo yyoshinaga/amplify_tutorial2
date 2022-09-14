@@ -19,7 +19,7 @@
         },
         "todosLambda": {
           "deploymentBucketName": "amplify-amplify9b6432cc508d4-staging-201507-deployment",
-          "s3Key": "amplify-builds/todosLambda-556c6b5a5858764a7363-build.zip"
+          "s3Key": "amplify-builds/todosLambda-634e582f514370465870-build.zip"
         },
         "todos": {
           "deploymentBucketName": "amplify-amplify9b6432cc508d4-staging-201507-deployment",
